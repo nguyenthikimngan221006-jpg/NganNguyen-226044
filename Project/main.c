@@ -4,243 +4,184 @@
 void main()
 {
 
-	//Bài 16. Nhập vào chỉ số điện tiêu thụ trong tháng. Tính tiền điện theo quy tắc:
-	//0–50 kWh: 1.800đ/kWh
-	//51–100 kWh: 2.000đ/kWh
-	//101–200 kWh: 2.500đ/kWh
-	//Trên 200 kWh: 3.000đ/kWh
-	//int dien;
-	//float tien;
-	//printf("Nhap vao so dien can tinh: ");
-	//scanf("%d", &dien);
-	//if (dien >200)
-	//{
-	//	tien = 50*1800 + 50 * 2000 + 100 * 2500 + (dien - 200)*3000;
-	//}
-	//else if (dien >= 101 && dien <= 200)
-	//{
-	//	tien = 50 * 1800 +50 *2000 + (dien -100) * 2500;
-	//}
-	//else if (dien >= 51 && dien <= 100)
-	//{
-	//	tien = 50 * 1800 +(dien -50)  * 2000;
-	//}
-	//else 
-	//{
-	//	tien = dien * 1800;
-	//}
-	//printf("Tong so tien dien la: %f", tien);
 
-	//bài 19
-	//int a, b, c;
-	//char opr;
-	//printf("Nhap a: ");
-	//scanf("%d", &a);
-	//printf("Nhap b: ");
-	//scanf("%d", &b);
-	//printf("Nhap c: ");
-	//scanf("%d", &c);
-	//
-	//printf("Nhap phep toan +, -, *, /: ");
-	//scanf(" %c", &opr);
-	//switch (opr)
-	//{
-	//case '+':
-	//	printf("Tong cac so: %d\n", a + b + c);
-	//	break;
-	//case '-':
-	//	printf("Hieu cac so: %d\n", a - b - c);
-	//	break;
-	//case '*':
-	//	printf("Tich cac so: %d\n", a * b * c);
-	//	break;
-	//case '/':
-	//	if (b == 0 || c == 0)
+	// vòng lặp for, lặp với số lần biết trước
+
+	// cú pháp
+	//	int tong = 0;
+	//	int n;
+	//	printf("Nhap vao so n: ");
+	//	scanf("%d", &n);
+	//	for (int i = 0; i <= n; i++)
 	//	{
-	//		printf("Khong the thuc hien phep chia cho 0 \n");
-	//	}
-	//	else
-	//	{
-	//		printf("thuong cac phep chia: %d\n", a / b / c);
+	//		tong = tong + i;
 	//
 	//	}
-	//	break;
-	//default:
-	//	printf("Phep toan khong hop le:");
-	//	break;
+	//	printf("Tong cua %d so la: %d ", n, tong);
+	//	return 0;
+	//
 	//}
 
 
-	//for (int i = 0; i < 5; i++)
-	//{
-	//	printf("Hello world\n");
-	//}
-	//return 0;
-	//for (int i = 0; i < 5; i++)
-	//{
-	//	if (i == 2) continue;
-	//	printf("lan chay: %d\n", i );
-	//}
-	//return 0;
-	//int tong = 0;
-	//for (int i = 1; i <= 10; i++)
-	//{
-	//	tong = tong +i ;
-	//}
-	//printf("tong: %d\n", tong);
-
-	//Vòng lặp while, lặp với số lần chưa biết trước
-	//cú pháp, nếu ko có điều kiện trong ngoặc  thì nó sẽ chạy hoài không dừng
-	//int j = 28;
-	//while (j % 2 ==0 )
-	//{
-	//	printf("lan chay%d\n", j);
-	//	j = j / 2;
-	//}
-// vòng lặp do...while
- //   int j = 28;
-	//int k = 0;
-	//while (k != j)
-	//{
-	//	printf("nhap gia tri k bang j: ");
-	//	scanf("%d", &k);
-	//}
 
 
-// cú pháp 
-	//do
-	//{
+		// vòng lặp while, lặp với số lần chưa biết trước
 
-	//}//	while (dieu_kien);
-	//int j = 28;
-	//int k = 28;
-	//do
-	//{
-	//	printf("nhap gia ti k bang j: ");
-	//	scanf("%d", &k);
-
-	//} while (k != j);
-// bài tập dùng vòng lặp for in ra bảng cửu chương 2
-//int tich;
-//for (int i = 0; i <= 10; i++)
-//{
-//	tich = i * 2;
-//	printf("Bang cuu chuong 2: 2* %d = %d\n", i, tich);
-//}
-
-
-//for (int i = 0; i < 10; i++)
-//{
-//	if (i == 4) continue;
-//	printf("Bang cuu chuong %d\n", i);
-//	for (int j = 0; j <= 10; j++)
-//	{
-//		printf("%d * %d= %d\n",i,j,i*j);
+		// cú pháp
+		//int j = 0;
+		//int k = 0;
+		//while (k != j)
 //
+//
+//	int j;
+//	int k;
+//	
+//
+//	printf("Nhap so j: ");
+//	scanf("%d", &j);
+//
+//	printf("Nhap vao so k: ");
+//	scanf("%d", &k);
+//
+//	while (k != j)
+//	{
+//		printf("Gia tri cua k la: %d\n", k);
+//		k++; 
 //	}
-//	printf("\n");
-//}
-//bt 2 Nhập vào số nguyên từ bàn phím tính và in kết quả ra giai thừa của n (1*2*3*4*n)
-//int n;
-//int giaithua =1;
-//printf("Nhap vao gia tri n: ");
-//scanf("%d", &n);
-//for (int a =1 ;a <=n; a++)
-//{
-//	giaithua = giaithua * a;
-//}
-//printf("Ket qua cua giai thua: %d", giaithua);
-//return 0;
+//
+//	printf("So k bang so j (k = %d, j = %d)\n", k, j);
+//
+//	return 0;
 //}
 
-//Nhập vào số nguyên n từ bàn phím
-// kiểm tra xem số đó có phải là số nguyên tố không
-// nếu đúng in ra màn hình n là số nguyên tố
-// nếu sai thì in ra n không phải là só nguyên tố
-//int n;
-//int b;
-//	printf("Nhap vao so n: ");
-//	scanf("%d", &n);
-//	if (n <= 1)
+
+
+		// btvn
+	// BT1:
+	// Tìm ước chung lớn nhất (GCD)
+	// Nhập hai số nguyên dương A và B, sử dụng vòng lặp để tìm ƯCLN của hai số.
+	// Không sử dụng hàm có sẵn.
+//
+//	int a, b;
+//	printf("Nhap vao so a: ");
+//	scanf("%d", &a);
+//	printf("Nhap vao so b: ");
+//	scanf("%d", &b);
+//
+//	int min = (a < b) ? a : b; 
+//	printf("So nho nhat la %d " ,min);
+//	for (int i = min; i > 0; i--)
 //	{
-//		printf("%d khong phai la so nguyen to\n", n);
-//	}
-//	else
-//	{
-//		for (int a = 1; a <= n;a++)
-//		{
-//			if (n % a == 0)
-//			{
-//				b = b + 1;	
-//			}
+//		if ((a % i == 0 && b % i == 0) || i == 1) {
+//			printf("  UCLN: %d \n", i);
+//			break;
 //		}
-//		if (b == 2)
+//	}
+//	
+//}
+
+// Tìm bội chung nhỏ nhất của 2 số 
+
+//	int a, b;
+//	printf("Nhap vao a: ");
+//	scanf("%d", &a);
+//	printf("Nhap vao b: ");
+//	scanf("%d", &b);
+//
+//	int max = (a > b) ? a : b;
+//	for (int n = max; ;n++)
+//	{
+//		if ((n % a == 0 && n % b == 0))
 //		{
-//			printf("%d la so nguyen to", n);
+//			printf("BCNN %d", n);
+//			break;
+//		}
+//	}
+//}
+
+
+
+
+// // BT2: Trò chơi đoán số
+// Chương trình sinh ra một số bí mật trong khoảng 1–100. Người dùng liên tục nhập số dự đoán cho đến khi đoán đúng. Sau mỗi lần nhập:
+// Nếu số nhập nhỏ hơn số bí mật → thông báo "Lon hon"
+// Nếu số nhập lớn hơn → thông báo "Nho hon"
+// Nếu đúng → thông báo số lần đoán.
+
+//	srand(time(NULL));
+//
+//	int sbm = rand() % 100 + 1;
+//	int count = 0;
+//	int n = 0;
+//	do {
+//		count++;
+//		printf("nhap so ban doan: ");
+//		scanf("%d", &n);
+//		if (n > sbm)
+//		{
+//			printf("ban da nhap so lon hon so bi mat \n");
+//		}
+//		else if (n < sbm)
+//		{
+//			printf("ban da nhap so nho hon so bi mat \n");
 //		}
 //		else
 //		{
-//			printf("n khong phai la so nguyen to");
+//			printf("chuc mung ban da nhap dung sau %d lan \n", count);
 //		}
-//	}
-
-//	return 0;
-//int n = 0;
-//pritnf("Nhap n: ");
-//scanf("%d", &n);
-//int isSnt = 1;
-//for (int i = 2; i < n /2; i++)
-//{
-//	if (n % i == 0)
+//	} while (n != sbm);
+//
+//}
+//
+//	srand(time(NULL));
+//	int sbm = rand() % 1000 + 1;
+//	int count = 0;
+//	int n = 0;
+//	do
 //	{
-//		isSnt = 0;
-//		break;
-//	}
-//}
-//if (isSnt)
-//{
-//	printf("%d la so nguyen to\n", n);
-//}
-//else
-//{
-//	printf("%d khong phai la so nguyen to");
+//		count++;
+//		printf("Nhap so bi mat: \n");
+//		scanf("%d", &n);
+//		if (n > sbm)
+//		{
+//			printf("So bi mat la so nho hon \n");
+//		}
+//		else if (n < sbm)
+//		{
+//			printf("So bi mat la so lon hon \n");
+//		}
+//
+//		else
+//		{
+//			printf("Ban da nhap dung so bi mat o lan thu %d \n", count);
+//		}
+//	} while (n != sbm);
 //}
 
-//BT4 Nhập vào số nguyên n, đếm xem số lượng chữ số của n và in ra màn hình
-// Vd 97421 -> n có 5 chữ số 
-// gợi ý dùng vòng lặp while kết hợp chia nguyên cho 10 để đếm
-	int n;
-	int a = 0;
-	printf("Nhap vao so n: ");
-	scanf("%d", &n);
-	int t = n;
-	if (n == 0)
+
+
+	srand(time(NULL));
+	char kitubm = 'a' + rand() % 26;
+	char n;
+	int count = 0;
+	do
 	{
-		printf("So 0 có 1 chu so");
-	}
-	else
-	{
-		while (n > 0)
+		count++;
+		printf("Hay nhap ki tu ban chon: \n");
+		scanf(" %c", &n);
+
+		if (n > kitubm)
 		{
-			n = n / 10;
-			a ++;
-
+			printf("Ki tu bi mat nam o phia truoc: \n");
 		}
-		printf("So %d co %d chu so", t, a);
-	}
-	
-
+		else if (n < kitubm)
+		{
+			printf("Ki tu bi mat nam o sau: \n");
+		}
+		else
+		{
+			printf("Chuc mung ban da doan trung duoc ki tu bi mat o lan doan thu %d", count);
+		}
+	} while (n != kitubm);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
